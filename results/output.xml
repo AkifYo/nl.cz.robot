@@ -1,45 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.11.5 on win32)" generated="20230906 21:56:48.684" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.11.5 on win32)" generated="20230906 22:22:09.934" rpa="false" schemaversion="4">
 <suite id="s1" name="Ebay" source="C:\Users\Lenovo X270\PycharmProjects\RobotFramework\Tests\Ebay\ebay.robot">
 <test id="s1-t1" name="Verify basic search Functionality for eBay" line="10">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://www.ebay.com</arg>
 <arg>firefox</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230906 21:56:48.943" level="INFO">Opening browser 'firefox' to base url 'https://www.ebay.com'.</msg>
-<msg timestamp="20230906 21:56:49.277" level="WARN">The version of firefox cannot be detected. Trying with latest driver version</msg>
-<status status="PASS" starttime="20230906 21:56:48.943" endtime="20230906 21:56:57.702"/>
+<msg timestamp="20230906 22:22:10.184" level="INFO">Opening browser 'firefox' to base url 'https://www.ebay.com'.</msg>
+<msg timestamp="20230906 22:22:10.514" level="WARN">The version of firefox cannot be detected. Trying with latest driver version</msg>
+<status status="PASS" starttime="20230906 22:22:10.183" endtime="20230906 22:22:19.031"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>input#gh-ac</arg>
+<arg>css:input#gh-ac</arg>
 <arg>mobile</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230906 21:56:57.711" level="INFO">Typing text 'mobile' into text field 'input#gh-ac'.</msg>
-<msg timestamp="20230906 21:56:57.946" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230906 21:56:57.947" level="FAIL">Element with locator 'input#gh-ac' not found.</msg>
-<status status="FAIL" starttime="20230906 21:56:57.710" endtime="20230906 21:56:57.953"/>
+<msg timestamp="20230906 22:22:19.035" level="INFO">Typing text 'mobile' into text field 'css:input#gh-ac'.</msg>
+<status status="PASS" starttime="20230906 22:22:19.033" endtime="20230906 22:22:19.263"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
-<arg>input#gh-btn</arg>
+<arg>css:input#gh-btn</arg>
 <arg>[Return]</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<status status="NOT RUN" starttime="20230906 21:56:57.957" endtime="20230906 21:56:57.957"/>
+<msg timestamp="20230906 22:22:19.268" level="INFO">Sending key(s) ('[Return]',) to css:input#gh-btn element.</msg>
+<msg timestamp="20230906 22:22:19.630" level="INFO">Sending keys [Return]</msg>
+<status status="PASS" starttime="20230906 22:22:19.266" endtime="20230906 22:22:19.668"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>results for moobile</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="NOT RUN" starttime="20230906 21:56:57.958" endtime="20230906 21:56:57.958"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20230906 21:56:57.959" endtime="20230906 21:56:57.959"/>
+<msg timestamp="20230906 22:22:19.866" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230906 22:22:19.867" level="FAIL">Page should have contained text 'results for moobile' but did not.</msg>
+<status status="FAIL" starttime="20230906 22:22:19.670" endtime="20230906 22:22:19.870"/>
 </kw>
 <doc>This test case verifies the basic search</doc>
 <tag>Functional</tag>
-<status status="FAIL" starttime="20230906 21:56:48.942" endtime="20230906 21:56:57.959">Element with locator 'input#gh-ac' not found.</status>
+<status status="FAIL" starttime="20230906 22:22:10.183" endtime="20230906 22:22:19.871">Page should have contained text 'results for moobile' but did not.</status>
 </test>
 <doc>Basic Search Functionality</doc>
-<status status="FAIL" starttime="20230906 21:56:48.688" endtime="20230906 21:56:57.964"/>
+<status status="FAIL" starttime="20230906 22:22:09.937" endtime="20230906 22:22:19.872"/>
 </suite>
 <statistics>
 <total>
@@ -53,7 +51,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230906 21:56:48.689" level="ERROR">Error in file 'C:\Users\Lenovo X270\PycharmProjects\RobotFramework\Tests\Ebay\ebay.robot' on line 22: Creating keyword 'Setup chromedriver' failed: User keyword cannot be empty.</msg>
-<msg timestamp="20230906 21:56:49.277" level="WARN">The version of firefox cannot be detected. Trying with latest driver version</msg>
+<msg timestamp="20230906 22:22:10.514" level="WARN">The version of firefox cannot be detected. Trying with latest driver version</msg>
 </errors>
 </robot>

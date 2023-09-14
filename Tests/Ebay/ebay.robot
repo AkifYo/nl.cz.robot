@@ -12,13 +12,13 @@ Verify basic search Functionality for eBay
   [Tags]  Functional
 
   Open Browser  https://www.ebay.com   firefox
-  Input Text  input#gh-ac  mobile
-  Press Keys  input#gh-btn  [Return]
+  Input Text  css:input#gh-ac  mobile
+  Press Keys  css:input#gh-btn  [Return]
   Page Should Contain  results for moobile
-  Close Browser
+  [Teardown]
 
 
 *** Keywords ***
-Setup chromedriver
+
 
 
